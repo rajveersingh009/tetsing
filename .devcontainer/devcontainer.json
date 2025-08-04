@@ -1,4 +1,6 @@
 {
   "image": "ghcr.io/devcontainers-extra/features/n8n:1",
-  "features": {}
+  "features": {},
+  "postCreateCommand": "mkdir -p /home/node/.n8n && chmod -R 777 /home/node/.n8n && n8n start",
+  "forwardPorts": [5678]
 }
